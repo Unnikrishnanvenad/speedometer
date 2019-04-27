@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		432E736F22701C89005A94FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432E736E22701C89005A94FE /* HomeViewController.swift */; };
+		432E737322701CFC005A94FE /* GradientExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432E737222701CFC005A94FE /* GradientExtension.swift */; };
+		432E737622701E20005A94FE /* SpeedDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432E737522701E20005A94FE /* SpeedDisplayView.swift */; };
+		432E737822701E67005A94FE /* WarningButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432E737722701E67005A94FE /* WarningButton.swift */; };
+		434DE75822717077001A5C83 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434DE75722717077001A5C83 /* LocationManager.swift */; };
+		434DE75B22717218001A5C83 /* Speedometer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 434DE75922717218001A5C83 /* Speedometer.xcdatamodeld */; };
+		434DE75E22717346001A5C83 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434DE75D22717346001A5C83 /* CoreDataStack.swift */; };
+		434DE767227174C1001A5C83 /* MulticolorPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434DE763227174C1001A5C83 /* MulticolorPolyline.swift */; };
+		434DE768227174C1001A5C83 /* StoryboardSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434DE764227174C1001A5C83 /* StoryboardSupport.swift */; };
+		434DE769227174C1001A5C83 /* FormatDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434DE765227174C1001A5C83 /* FormatDisplay.swift */; };
+		434DE76A227174C1001A5C83 /* UnitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434DE766227174C1001A5C83 /* UnitExtensions.swift */; };
+		434DE77A22718619001A5C83 /* NewRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434DE77922718619001A5C83 /* NewRouteViewController.swift */; };
+		434DE77C22718E51001A5C83 /* RouteDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434DE77B22718E51001A5C83 /* RouteDetailsViewController.swift */; };
+		43707C272270219A0099CF83 /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43707C262270219A0099CF83 /* LocationHandler.swift */; };
+		43707C29227022440099CF83 /* CompassButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43707C28227022440099CF83 /* CompassButton.swift */; };
+		43B04CE82270199E00AA2793 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B04CE72270199E00AA2793 /* AppDelegate.swift */; };
+		43B04CED2270199E00AA2793 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B04CEB2270199E00AA2793 /* Main.storyboard */; };
+		43B04CEF227019A000AA2793 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43B04CEE227019A000AA2793 /* Assets.xcassets */; };
+		43B04CF2227019A000AA2793 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B04CF0227019A000AA2793 /* LaunchScreen.storyboard */; };
+		43B837CD2270265100342007 /* MapViewSpeedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B837CC2270265100342007 /* MapViewSpeedButton.swift */; };
+		43B837CF227026F400342007 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B837CE227026F400342007 /* MapViewController.swift */; };
+		43B837D5227048AC00342007 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B837D4227048AC00342007 /* LaunchViewController.swift */; };
+		43B837D7227059BE00342007 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B837D6227059BE00342007 /* InitialViewController.swift */; };
+		43B837DA22705DA400342007 /* VL_UserInviteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B837D822705DA400342007 /* VL_UserInviteCell.swift */; };
+		43B837DB22705DA400342007 /* VL_UserInviteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43B837D922705DA400342007 /* VL_UserInviteCell.xib */; };
+		43B837DD22705DDB00342007 /* VL_UserInviteCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B837DC22705DDB00342007 /* VL_UserInviteCollection.swift */; };
+		43B837E0227063AF00342007 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B837DE227063AF00342007 /* Reusable.swift */; };
+		43B837E1227063AF00342007 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B837DF227063AF00342007 /* UICollectionView+Reusable.swift */; };
+		43B837E322707E5000342007 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B837E222707E5000342007 /* HistoryViewController.swift */; };
+		43B837E622707FB500342007 /* historyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B837E422707FB400342007 /* historyCell.swift */; };
+		43B837E722707FB500342007 /* historyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43B837E522707FB400342007 /* historyCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		432E736E22701C89005A94FE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		432E737222701CFC005A94FE /* GradientExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientExtension.swift; sourceTree = "<group>"; };
+		432E737522701E20005A94FE /* SpeedDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedDisplayView.swift; sourceTree = "<group>"; };
+		432E737722701E67005A94FE /* WarningButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningButton.swift; sourceTree = "<group>"; };
+		434DE75722717077001A5C83 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		434DE75A22717218001A5C83 /* Speedometer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Speedometer.xcdatamodel; sourceTree = "<group>"; };
+		434DE75D22717346001A5C83 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		434DE763227174C1001A5C83 /* MulticolorPolyline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulticolorPolyline.swift; sourceTree = "<group>"; };
+		434DE764227174C1001A5C83 /* StoryboardSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSupport.swift; sourceTree = "<group>"; };
+		434DE765227174C1001A5C83 /* FormatDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormatDisplay.swift; sourceTree = "<group>"; };
+		434DE766227174C1001A5C83 /* UnitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitExtensions.swift; sourceTree = "<group>"; };
+		434DE77922718619001A5C83 /* NewRouteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRouteViewController.swift; sourceTree = "<group>"; };
+		434DE77B22718E51001A5C83 /* RouteDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailsViewController.swift; sourceTree = "<group>"; };
+		43707C262270219A0099CF83 /* LocationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHandler.swift; sourceTree = "<group>"; };
+		43707C28227022440099CF83 /* CompassButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassButton.swift; sourceTree = "<group>"; };
+		43B04CE42270199E00AA2793 /* Speedometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Speedometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B04CE72270199E00AA2793 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43B04CEC2270199E00AA2793 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43B04CEE227019A000AA2793 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43B04CF1227019A000AA2793 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43B04CF3227019A000AA2793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43B837CC2270265100342007 /* MapViewSpeedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewSpeedButton.swift; sourceTree = "<group>"; };
+		43B837CE227026F400342007 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		43B837D4227048AC00342007 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		43B837D6227059BE00342007 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		43B837D822705DA400342007 /* VL_UserInviteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VL_UserInviteCell.swift; sourceTree = "<group>"; };
+		43B837D922705DA400342007 /* VL_UserInviteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VL_UserInviteCell.xib; sourceTree = "<group>"; };
+		43B837DC22705DDB00342007 /* VL_UserInviteCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VL_UserInviteCollection.swift; sourceTree = "<group>"; };
+		43B837DE227063AF00342007 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		43B837DF227063AF00342007 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
+		43B837E222707E5000342007 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		43B837E422707FB400342007 /* historyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyCell.swift; sourceTree = "<group>"; };
+		43B837E522707FB400342007 /* historyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = historyCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43B04CE12270199E00AA2793 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		432E736D22701C76005A94FE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				434DE77922718619001A5C83 /* NewRouteViewController.swift */,
+				434DE77B22718E51001A5C83 /* RouteDetailsViewController.swift */,
+				43B837D4227048AC00342007 /* LaunchViewController.swift */,
+				43B837D6227059BE00342007 /* InitialViewController.swift */,
+				432E736E22701C89005A94FE /* HomeViewController.swift */,
+				43B837CE227026F400342007 /* MapViewController.swift */,
+				43B837E222707E5000342007 /* HistoryViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		432E737122701CD6005A94FE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				434DE765227174C1001A5C83 /* FormatDisplay.swift */,
+				434DE763227174C1001A5C83 /* MulticolorPolyline.swift */,
+				434DE764227174C1001A5C83 /* StoryboardSupport.swift */,
+				434DE766227174C1001A5C83 /* UnitExtensions.swift */,
+				434DE75722717077001A5C83 /* LocationManager.swift */,
+				43B837DC22705DDB00342007 /* VL_UserInviteCollection.swift */,
+				43B837DE227063AF00342007 /* Reusable.swift */,
+				43B837DF227063AF00342007 /* UICollectionView+Reusable.swift */,
+				432E737222701CFC005A94FE /* GradientExtension.swift */,
+				43707C262270219A0099CF83 /* LocationHandler.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		432E737422701E0B005A94FE /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				43B04CEE227019A000AA2793 /* Assets.xcassets */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		434DE75C2271732A001A5C83 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				434DE75D22717346001A5C83 /* CoreDataStack.swift */,
+				434DE75922717218001A5C83 /* Speedometer.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		43B04CDB2270199E00AA2793 = {
+			isa = PBXGroup;
+			children = (
+				43B04CE62270199E00AA2793 /* Speedometer */,
+				43B04CE52270199E00AA2793 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43B04CE52270199E00AA2793 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43B04CE42270199E00AA2793 /* Speedometer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43B04CE62270199E00AA2793 /* Speedometer */ = {
+			isa = PBXGroup;
+			children = (
+				43B04CF3227019A000AA2793 /* Info.plist */,
+				434DE75C2271732A001A5C83 /* CoreData */,
+				43B837D022703F1600342007 /* Model */,
+				43B837D122703F4400342007 /* View */,
+				432E736D22701C76005A94FE /* Controllers */,
+				432E737122701CD6005A94FE /* Extension */,
+				432E737422701E0B005A94FE /* SupportFiles */,
+			);
+			path = Speedometer;
+			sourceTree = "<group>";
+		};
+		43B837D022703F1600342007 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				43B04CE72270199E00AA2793 /* AppDelegate.swift */,
+				43B04CEB2270199E00AA2793 /* Main.storyboard */,
+				43B837D922705DA400342007 /* VL_UserInviteCell.xib */,
+				43B837E522707FB400342007 /* historyCell.xib */,
+				43B04CF0227019A000AA2793 /* LaunchScreen.storyboard */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		43B837D122703F4400342007 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43B837D822705DA400342007 /* VL_UserInviteCell.swift */,
+				43707C28227022440099CF83 /* CompassButton.swift */,
+				432E737522701E20005A94FE /* SpeedDisplayView.swift */,
+				432E737722701E67005A94FE /* WarningButton.swift */,
+				43B837CC2270265100342007 /* MapViewSpeedButton.swift */,
+				43B837E422707FB400342007 /* historyCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43B04CE32270199E00AA2793 /* Speedometer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43B04CF6227019A000AA2793 /* Build configuration list for PBXNativeTarget "Speedometer" */;
+			buildPhases = (
+				43B04CE02270199E00AA2793 /* Sources */,
+				43B04CE12270199E00AA2793 /* Frameworks */,
+				43B04CE22270199E00AA2793 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Speedometer;
+			productName = Speedometer;
+			productReference = 43B04CE42270199E00AA2793 /* Speedometer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43B04CDC2270199E00AA2793 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "IRIS Medical Solutions";
+				TargetAttributes = {
+					43B04CE32270199E00AA2793 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 43B04CDF2270199E00AA2793 /* Build configuration list for PBXProject "Speedometer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43B04CDB2270199E00AA2793;
+			productRefGroup = 43B04CE52270199E00AA2793 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43B04CE32270199E00AA2793 /* Speedometer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43B04CE22270199E00AA2793 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B04CF2227019A000AA2793 /* LaunchScreen.storyboard in Resources */,
+				43B837DB22705DA400342007 /* VL_UserInviteCell.xib in Resources */,
+				43B04CEF227019A000AA2793 /* Assets.xcassets in Resources */,
+				43B04CED2270199E00AA2793 /* Main.storyboard in Resources */,
+				43B837E722707FB500342007 /* historyCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43B04CE02270199E00AA2793 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				434DE767227174C1001A5C83 /* MulticolorPolyline.swift in Sources */,
+				43B04CE82270199E00AA2793 /* AppDelegate.swift in Sources */,
+				43B837D5227048AC00342007 /* LaunchViewController.swift in Sources */,
+				43B837D7227059BE00342007 /* InitialViewController.swift in Sources */,
+				43B837CD2270265100342007 /* MapViewSpeedButton.swift in Sources */,
+				432E737322701CFC005A94FE /* GradientExtension.swift in Sources */,
+				434DE75B22717218001A5C83 /* Speedometer.xcdatamodeld in Sources */,
+				434DE769227174C1001A5C83 /* FormatDisplay.swift in Sources */,
+				434DE77C22718E51001A5C83 /* RouteDetailsViewController.swift in Sources */,
+				434DE768227174C1001A5C83 /* StoryboardSupport.swift in Sources */,
+				432E736F22701C89005A94FE /* HomeViewController.swift in Sources */,
+				43B837E1227063AF00342007 /* UICollectionView+Reusable.swift in Sources */,
+				43B837E322707E5000342007 /* HistoryViewController.swift in Sources */,
+				434DE77A22718619001A5C83 /* NewRouteViewController.swift in Sources */,
+				434DE75822717077001A5C83 /* LocationManager.swift in Sources */,
+				43B837E0227063AF00342007 /* Reusable.swift in Sources */,
+				43B837CF227026F400342007 /* MapViewController.swift in Sources */,
+				43707C272270219A0099CF83 /* LocationHandler.swift in Sources */,
+				43B837DD22705DDB00342007 /* VL_UserInviteCollection.swift in Sources */,
+				43B837E622707FB500342007 /* historyCell.swift in Sources */,
+				434DE75E22717346001A5C83 /* CoreDataStack.swift in Sources */,
+				434DE76A227174C1001A5C83 /* UnitExtensions.swift in Sources */,
+				432E737622701E20005A94FE /* SpeedDisplayView.swift in Sources */,
+				43B837DA22705DA400342007 /* VL_UserInviteCell.swift in Sources */,
+				432E737822701E67005A94FE /* WarningButton.swift in Sources */,
+				43707C29227022440099CF83 /* CompassButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		43B04CEB2270199E00AA2793 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43B04CEC2270199E00AA2793 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43B04CF0227019A000AA2793 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43B04CF1227019A000AA2793 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43B04CF4227019A000AA2793 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43B04CF5227019A000AA2793 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43B04CF7227019A000AA2793 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S246B657UX;
+				INFOPLIST_FILE = "$(SRCROOT)/Speedometer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Iris.Speedometer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43B04CF8227019A000AA2793 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S246B657UX;
+				INFOPLIST_FILE = "$(SRCROOT)/Speedometer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Iris.Speedometer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43B04CDF2270199E00AA2793 /* Build configuration list for PBXProject "Speedometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B04CF4227019A000AA2793 /* Debug */,
+				43B04CF5227019A000AA2793 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43B04CF6227019A000AA2793 /* Build configuration list for PBXNativeTarget "Speedometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B04CF7227019A000AA2793 /* Debug */,
+				43B04CF8227019A000AA2793 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		434DE75922717218001A5C83 /* Speedometer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				434DE75A22717218001A5C83 /* Speedometer.xcdatamodel */,
+			);
+			currentVersion = 434DE75A22717218001A5C83 /* Speedometer.xcdatamodel */;
+			path = Speedometer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 43B04CDC2270199E00AA2793 /* Project object */;
+}
